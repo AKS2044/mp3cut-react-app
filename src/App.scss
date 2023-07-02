@@ -11,14 +11,65 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
 .button {
+  cursor: pointer;
+  position: absolute;
+  z-index: 4;
   font-family: "Roboto", sans-serif;
   color: white;
   text-transform: uppercase;
   border-radius: 12px;
   height: 40px;
   background-color: rgb(42, 63, 222);
+}
+
+.logo {
+  min-width: 750px;
+  min-height: 750px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid;
+  animation: animatedgradient 3s ease alternate infinite;
+}
+
+.logo2 {
+  min-width: 750px;
+  min-height: 750px;
+  border-radius: 50%;
+  border: 1px solid;
+  position: absolute;
+  z-index: 1;
+  animation: animatedgradient 5s ease alternate infinite;
+}
+
+.logo3 {
+  min-width: 750px;
+  min-height: 750px;
+  border-radius: 50%;
+  border: 1px solid;
+  position: absolute;
+  z-index: 2;
+  animation: animatedgradient 4s ease alternate infinite;
+}
+
+@keyframes animatedgradient {
+  0% {
+    border-color: #ffffff;
+  }
+  25% {
+    border-color: #a95cfc;
+  }
+  50% {
+    border-color: #fc5cc4;
+  }
+  50% {
+    border-color: #695cfc;
+  }
+  100% {
+    border-color: #5cfcf9;
+  }
 }
