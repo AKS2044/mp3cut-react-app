@@ -56,6 +56,18 @@ button {
   animation: animatedgradient 4s ease alternate infinite;
 }
 
+.item {
+  background-color: red;
+  width: 5px;
+  margin: 2px;
+  border-radius: 30px;
+}
+
+.canva {
+  width: 100%;
+  position: absolute;
+}
+
 @keyframes animatedgradient {
   0% {
     border-color: #ffffff;
